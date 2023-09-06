@@ -1,0 +1,138 @@
+<html lang="en">
+
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ecommerce</title>
+            <!-- font awesome -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- style links -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/utilize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+</head>
+
+<body>
+    <!-- start nav section -->
+    <section id="header">
+        <div class="container">
+            <a href="index.html">
+                <img src="images/1-removebg-preview2-removebg-preview.png" class="logo">
+            </a>
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+        
+            <div class="cancel-icon">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="desketop">
+                <form action="#" id="form">
+                    <input id="search"type="search" class="search-data" placeholder="Search" required>
+                    <button type="submit" class="fas fa-search"id="sub"></button>
+                </form>
+                <i id="close" class="fa-solid fa-xmark close_navbar"></i>
+                <ul id="navbar">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="registeration.html" class="active">sign in</a></li>
+                    <li id="leg-bag">
+                        <a href="cart.html"  class="cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>0</span>
+                        </a>
+                    </li>
+                </ul>
+    
+            </div>
+            <div id="mobile"> 
+                <a href="cart.html"><img src="icons/icons8-shopping-cart-24.png"></a>
+                <i id="bar" class="fa fa-outdent open_navbar"></i> 
+            </div>
+        </div>
+    </section>
+    <!-- end nav section -->
+    <div class="registeration">
+        <div class="form_button">
+            <button class="toggle-btn active" id="signUp">sign up</button>
+            <button class="toggle-btn" id="signIn">sign in</button>
+            <div id="btn"></div>
+        </div>
+        <form method="get" class="signUp registeration-form active">
+        <div class="form_header">
+            <img src="images/registeration/avater.png" alt="avatre image" class="user_image">
+            <h2>Let's get started!</h2>
+            <p>Use your mobile number to sign in or sign up.</p>
+        </div>
+        <div>
+            
+            <div class="form-group">
+                <input id="User" type="text"  required onkeyup="this.setAttribute('value',this.value)" value="" />
+                <label for="User" class="User">Your name</label>
+                
+            </div>
+            
+            <div class="form-group">
+                <input id="Maile" type="email"  required onkeyup="this.setAttribute('value',this.value)" value="" />
+                <label for="Maile">Your email</label>
+            </div>
+            
+            <div class="form-group">
+                <input id="phNumber" type="number" required onkeyup="this.setAttribute('value',this.value)" value="" />
+                <label for="phNumber">Your phone</label>
+                
+            </div>
+            
+            <div class="form-group">
+                <input type = "password" name="pswd1" id="pswd1" onkeyup="this.setAttribute('value',this.value)" value="" required>
+                <label for="pswd1">Your password</label>
+                <i class="fa-regular fa-eye showPassword" onmouseover="hidePassword()"  onclick="showPassword(this)" ></i>
+                
+            </div>
+            <div class="form-group">
+                
+                <input type="password" name="pswd2" id="pswd2" onblur="matchPassword()" required onkeyup="this.setAttribute('value',this.value)" value="">
+                <label for="pswd2">Confirm password</label>
+                <i class="fa-regular fa-eye showPassword"  onmouseover="hidePassword()" onclick="showPassword(this,1)"></i>
+                
+            </div>
+            <div class="signUpError"></div>
+            <div class="form-group-row">
+                <input class="signupForm" type="button" value="sign up">
+            </div>
+
+                
+        </div>
+        </form>
+        <form class="signIn registeration-form">
+            <div class="form_header">
+                <img src="images/registeration/welcome.png" alt="avatre image" class="user_image">
+                <h2>Welcome</h2>
+        
+            </div>
+             <div class="form-group">
+                <input id="email" type="email"  required onkeyup="this.setAttribute('value',this.value)" value="" />
+                <label for="email">Your email</label>
+            
+            </div>
+            <div class="form-group">
+                <input type = "password" name="pswd3" id="pswd3" onkeyup="this.setAttribute('value',this.value)" value="" required>
+                <label for="pswd3">Your password</label>
+                <i class="fa-regular fa-eye showPassword" onclick="showPassword(this)" onmouseleave="hidePassword()" ></i>
+            </div>
+            <div class="error"></div>
+            <div class="form-group-row">
+                <input type="button" value="sign in" class="signInForm">
+            </div>
+        </form>
+    </div>
+    <!-- script -->
+    <script src="js/navbar.js"></script>
+    <script src="js/Sign.js"></script>
+</body>
+
+</html>

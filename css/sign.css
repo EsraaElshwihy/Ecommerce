@@ -1,0 +1,18 @@
+form{
+    text-align: center;
+    color:white;
+    padding-left:30%;
+    padding-right:30%;
+}
+div{
+    background-color:darkslategray;
+}
+img{
+    border-radius: 50%;
+    padding-top: 20px;
+}
+input{
+    size: 30%;
+    text-align: center;
+}
+

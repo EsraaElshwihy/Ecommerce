@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My account</title>
+           <!-- fonts -->
+           <link rel="preconnect" href="https://fonts.googleapis.com" />
+           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+           <link
+               href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700&display=swap"
+               rel="stylesheet"
+           />
+           <!-- font awesome -->
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+           <!-- styles links -->
+           <link rel="stylesheet" href="css/normalize.css" />
+           <link rel="stylesheet" href="css/utilize.css" />
+           <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+       </head>
+</head>
+<body>
+     <!-- start nav  -->
+     <section id="header">
+        <div class="container">
+            <a href="index.html">
+                <img src="images/1-removebg-preview2-removebg-preview.png" class="logo">
+            </a>
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+        
+            <div class="cancel-icon">
+                <i class="fas fa-times"></i>
+            </div>
+        
+            
+        
+            <div class="desketop">
+                <form action="#" id="form">
+                    <input id="search"type="search" class="search-data" placeholder="Search" required>
+                    <button type="submit" class="fas fa-search"id="sub"></button>
+                </form>
+                <i id="close" class="fa-solid fa-xmark close_navbar"></i>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="registeration.html" id="toggleSignIn">sign in</a></li>
+                    <li id="leg-bag">
+                        <a href="cart.html"  class="cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>0</span>
+                        </a>
+                    </li>
+                </ul>
+    
+            </div>
+            <div id="mobile"> 
+                <a href="cart.html"><img src="icons/icons8-shopping-cart-24.png"></a>
+                <i id="bar" class="fa fa-outdent open_navbar"></i> 
+            </div>
+        </div>
+    </section>
+    <!-- end nav  -->
+    <main class="profile">
+        <aside class="profile_sidebar">
+            <ul>
+                <li data-toggle="home" class="active">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Account Home</span>
+                </li>
+                <li data-toggle="favorite">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>saved items</span>
+                </li>
+            </ul>
+        </aside>
+        <section class="content">
+            <div id="home" class="home active">
+                <div class="header center_heading">
+                    <h2>Account overview</h2>
+                </div>
+                <div class="account_details grid">
+                    <div class="account_box">
+                        <div class="account_header">
+                            <i class="fa-regular fa-address-card"></i>
+                            <span>personal information</span>
+                        </div>
+                        <div class="account_content">
+                            <p class="user_name">Sherien</p>
+                            <p class="email">mariamelsarag44@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="favorite" id="favorite">
+                <div class="header center_heading">
+                    <h2>saved items</h2>
+    
+                </div>
+                <div class="favorite_container">
+                    <div class="favorite_row">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> 
+    <!-- script -->
+    <script src="js/navbar.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>
